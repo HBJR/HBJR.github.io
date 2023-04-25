@@ -21,7 +21,19 @@
                 {{ site.email }}
               </a>
             </li>
+	  {%- endif -%}
+	  {%- if site.twitter_username -%}
+	    <li>
+		    <a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}
+	      </a>
+	    </li>
           {%- endif -%}
+	  {%- if site.github_username -%}
+	    <li>
+		    <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}
+	      </a>
+	    </li>
+	  {%- endif -%}
         </ul>
       </div>
 
@@ -32,9 +44,6 @@
         <p>
           <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Powered by Bootstrap 4 Github Pages</a>
         </p>
-        <p>
-          <a href="https://github.com/nicolas-van/bootstrap-4-github-pages"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/nicolas-van/bootstrap-4-github-pages?style=social"></a>
-        <p>
       </div>
 
     </div>
