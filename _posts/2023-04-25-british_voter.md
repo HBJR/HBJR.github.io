@@ -4,6 +4,7 @@ title:  Building a British Voter
 date:   2023-04-25
 categories: machine learning, voting behaviour, UK
 ---
+*Update (2023-08-06)*: The old website I was using to host this app decided to sunlight their free service. The app can now be found [here](https://british-voter.onrender.com) with some new features.
 
 A few years ago the Economist released an article about forecasting American voting behaviour (link [here](https://www.economist.com/graphic-detail/2018/11/03/how-to-forecast-an-americans-vote)). As part of the article they built a statistical model of American voting behaviour and included a web app where you can input demographic characteristics (race, age, religion, etc.) and see the model's predicted probabilities of supporting Democrats and Republicans. For a while I've been wanting to do a similar thing for the UK. The challenge is that it's considerably more difficult to predict vote choice in the UK, where there are multiple electorally viable parties, than in the US, where there are essentially only two viable parties. Nonetheless, I've finally got around to making the model (with some much appreciated help from [John Handley](https://www.twitter.com/jwhandley17)). You can play with it yourself [here](https://web-production-4f82.up.railway.app/). You enter various demographic characteristics of a British voter and the page outputs the probability that voter would have supported one of six parties: Reform UK, the Conservatives, the Greens, Labour, Liberal Democrats, and the Scottish National Party (SNP). 
 
@@ -11,7 +12,7 @@ I decided to do a brief write up of how the model works and how well it performs
 
 ## The Model
 
-The Economist did not describe how they constructed their model so I simply proceeded in the way that I thought was most sensible. A note here: I'm a data science student and I've got a decent amount of experience with stats, but I'm still basically a newbie. If you notice anything that you think could improve the model, please let me know! Also, if you're familiar with building statistical/machine learning models, feel free to skip the intuition section, it just describes the intuition for how we can model vote choice on the basis of demographics.
+The Economist did not describe how they constructed their model so I simply proceeded in the way that I thought was most sensible. A note here: if you're familiar with building statistical/machine learning models, feel free to skip the intuition section, it just describes the intuition for how we can model vote choice on the basis of demographics.
 
 ### Intuition
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Building a British Voter 
-date:   2023-04-23
+date:   2023-04-25
 categories: machine learning, voting behaviour, UK
 ---
 
@@ -11,7 +11,7 @@ I decided to do a brief write up of how the model works and how well it performs
 
 ## The Model
 
-The Economist did not describe how they constructed their model so I simply proceeded in the way that I thought was most sensible. A note here: I'm a data science student and I've got a decent amount of experience with stats, but I'm still basically a newbie. If you notice anything that you think could improve the model, please let me know! Also, if you're familiar with building statistical/machine learning models, feel free to skip the intuition section, it just describes the intuition for how we can model vote choice on the basis of demographics.
+The Economist did not describe how they constructed their model so I simply proceeded in the way that I thought was most sensible. A note here: if you're familiar with building statistical/machine learning models, feel free to skip the intuition section, it just describes the intuition for how we can model vote choice on the basis of demographics.
 
 ### Intuition
 
